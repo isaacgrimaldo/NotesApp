@@ -1,0 +1,65 @@
+.Note__bar-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.Note__Appbar{
+    align-items: center;
+    background-color: $primary;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px 20px 10px 20px;
+}
+
+
+.note__content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.note__title-input ,   .note__texrareas {
+    border: none;
+    display: block;
+    &:focus{
+        outline: none;
+        border: 1px solid $dark-green;
+        box-shadow: 0px 10px 30px black ;
+    }
+}
+
+.note__title-input{
+    color: $dark-green;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 3px ;
+
+}
+
+.note__texrareas{
+    background-color: lighten($color: $button-active-blue, $amount: 1);
+    border: 1px solid black;
+    box-shadow: 3px 10px 30px black;
+    color: white;
+    font-size: 25px;
+    flex: 1 1 auto;
+    width: 100vh;
+    border-radius: 8px;
+    padding: 30px;
+    resize: none;
+    text-align: center;
+}
+
+.note__img img{
+    min-width: 100px;
+    max-width: 50%;
+    min-width: 100px;
+    margin: 50px;
+}

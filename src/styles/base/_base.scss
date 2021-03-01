@@ -1,0 +1,45 @@
+/*  
+   de esta forma podermos establecer tipo de estilo  con clases para depues
+   usar los en los componente 
+*/
+
+
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+main {
+    width: 100%;
+}
+
+.mt-1{
+    margin-top: 5px;
+}
+
+.mt-5{
+    margin-top: 20px;
+}
+
+.mb-1{
+    margin-bottom: 5px;
+}
+
+.mb-5{
+    margin-bottom: 20px;
+}
+
+.pointer{
+    cursor:pointer;
+}
+
+.over_mouse{
+    
+    &:hover{
+        color:  $light-grey;
+        transform: scale(1.05 , 1.02);
+    }
+
+}

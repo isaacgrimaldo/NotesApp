@@ -1,0 +1,115 @@
+.journal__main-content{
+    display: flex;
+    background-color:white;
+}
+
+.journal__sidebar{
+    background-color:$dark-green;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    height: 120ch;
+    padding-left:  15px;
+    padding-right: 15px;
+}
+
+.journal__sidebar-navbar{
+  display: flexbox;
+  justify-content: space-between;
+}
+
+.journal__sidebar-navbar h3 {
+    font-weight: lighter;
+}
+
+.journla__new-entry{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.joutnal__Entris{
+    display: flexbox;
+    margin-top: 30px;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color:lighten($color: $dark-green, $amount: 10) ;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.joutnal__Entris::-webkit-scrollbar{
+    width: 9px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.joutnal__Entris::-webkit-scrollbar-thumb{
+   background-color:darken($color: $button-active-blue, $amount: 6);  
+   border: none;
+   border-radius: 10px;
+}
+
+
+.journal__entri{
+   display: flex;
+   align-items: center;
+   background-color:darken($color: $button-active-blue, $amount: 10);
+   border-radius: 5px;
+   color: $dark-green;
+   margin-bottom: 10px;
+   justify-content:left;
+}
+
+.journal__entri-picture{
+   height:  50px;
+    width: 70px;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    
+}
+
+.journal__entry-body{
+   align-items: center; 
+   display: flex;
+   width: fit-content;
+   background-color: white;
+   border: none;
+   border-radius: 8px;
+}
+
+.joural__entry-title{
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  float:left;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.journal__entry-content{
+  font-size: 10px; 
+}
+
+.journal__entry-date-box{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.journal__entry-date-box{
+    font-size: 15px;
+    text-align: center;
+    background-color:darken($color: $button-active-blue, $amount: 10);
+    color: white;
+    border-radius: 5px;
+}

@@ -1,0 +1,66 @@
+.btn{
+    font-size: 16px;
+    margin: 5px;
+    padding: 3px;
+    border: none;
+    text-align: center;
+    background: transparent;
+    color: white;
+   
+    transition: color .38s;
+   
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        color: darken($color:white, $amount: 15);
+    }
+
+    &:disabled{
+         opacity: 0.7;
+         cursor: not-allowed;
+    }
+    
+}
+
+.btn-Primary{
+    background-color: $primary;
+    border-radius: 2px;
+    color: $light-grey;
+
+    transition: background-color .35s ,  padding .5s ;
+
+    &:focus{
+        outline: none;
+    }
+    &:disabled{
+        background-color: lighten($color: $primary, $amount: 10);
+       cursor:not-allowed;
+       color: black;
+    }
+    
+    &:hover{
+        /*Para oscureser el color */
+        background-color: darken($color: $primary, $amount: 15);
+        cursor: pointer;
+    }
+
+}
+
+.btn__danger{
+     
+    border-radius: 8px;
+    transition: padding .35s , background-color .35s;
+
+    &:hover{
+        padding: 5px;
+        border: none;
+        background: darken($color: red, $amount: 12);
+    }
+}
+
+
+.btn__block{
+    width: 100%;
+}
+
