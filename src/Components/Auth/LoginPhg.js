@@ -17,8 +17,8 @@ export const LoginPhg = () => {
      const dispatch = useDispatch()
 
      const [values , handelerSetValues, ]  = useFomrValues({
-         email: 'isaac@gmail.com',
-         password : '123456',
+         email: '',
+         password : '',
      })
 
 

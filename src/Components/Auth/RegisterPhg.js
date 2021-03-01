@@ -16,10 +16,10 @@ export const RegisterPhg = () => {
   const dispatch = useDispatch();
 
    const [values , setValuesForm] = useFomrValues({
-      name: 'Isaac Grimaldo',
-      email:'isaac@gmail.com',
-      password: '123456',
-      password2: '123456'
+      name: '',
+      email:'',
+      password: '',
+      password2: ''
 
    })
 
